@@ -1,19 +1,19 @@
 <div class="container-fluid d-flex justify-content-center align-items-center vh-100">
-  <div class="user-register-container col-md-3">
+  <div class="user-login-container col-md-3">
     <flash-message
       [successMessage]="successMessage"
       [errorMessage]="errorMessage">
     </flash-message>
-    <h3 class="mb-4">Register</h3>
-    <form (ngSubmit)="registerUser()" class="text-center p-4 bg-light rounded">
+    <h3 class="mb-4">Login</h3>
+    <form (ngSubmit)="loginUser()" class="text-center p-4 bg-light rounded">
       <div class="form-group">
         <input type="email" id="email" [(ngModel)]="email" name="email" required placeholder="Email" class="form-control mb-3">
         <input type="password" id="password" [(ngModel)]="password" name="password" required placeholder="Password" class="form-control mb-3">
-        <button type="submit" class="btn btn-primary btn-block">Register</button>
+        <button type="submit" class="btn btn-primary btn-block">Login</button>
       </div>
     </form>
     <p class="text-center">
-      Go to <a routerLink="/login">Login</a>
+      Don't have an account? <a routerLink="/register">Register</a>
     </p>
   </div>
 </div>
