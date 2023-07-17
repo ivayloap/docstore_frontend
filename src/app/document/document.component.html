@@ -1,4 +1,11 @@
-<div>
-  <input type="file" (change)="onFileSelected($event)" />
-  <button (click)="uploadFile()">Upload File</button>
+<div class="d-flex justify-content-center align-items-center vh-100">
+  <div class="user-upload-container col-md-6 p-4 bg-light rounded">
+    <h3 class="mb-4">Upload Document</h3>
+    <div class="input-group mb-3">
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="fileInput" (change)="onFileSelected($event)">
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary btn-block" (click)="uploadFile()">Upload</button>
+  </div>
 </div>
